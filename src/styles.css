@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+:root {
+    /* Primary */
+    ---primary-soft-red: hsl(10, 79%, 65%);
+    ---primary-cyan: hsl(186, 34%, 60%);
+
+    /* Neutral */
+    ---neutral-dark-brown: hsl(25, 47%, 15%);
+    ---neutral-medium-brown: hsl(28, 10%, 53%);
+    ---neutral-cream: hsl(27, 66%, 92%);
+    ---neutral-very-pale-orange: hsl(33, 100%, 98%);
+
+    /* Weight */
+    ---font-weight-light: 400;
+    ---font-weight-bold: 700;
+
+    ---font-base: "DM Sans", sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(---neutral-cream);
+    font-family: var(---font-base);
+}
+
+.expenses-chart-component {
+    width: 30%;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-balance {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    border-radius: 20px;
+    background-color: var(---primary-soft-red);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.my-balance .content p {
+    margin-bottom: 5px;
+    color: var(---neutral-cream);
+    font-size: 0.85rem;
+}
+
+
+.my-balance .content h2 {
+    color: var(---neutral-very-pale-orange);
+    font-size: 1.4rem;
+    font-weight: var(---font-weight-bold);
+}
+
+.my-balance .logo img {
+    width: 3.5rem;
+}
+
+
+.expenses-chart {
+    width: 100%;
+    background-color: var(---neutral-very-pale-orange);
+    padding: 1rem 1.5rem;
+    border-radius: 20px;
+}
+
+.top-content h2 {
+    font-weight: var(---font-weight-bold);
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+
+
+.middle-content {
+    width: 100%;
+    border-bottom: 0.5px solid #d8d8d8;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.middle-content .charts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.charts .chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bars {
+    width: 35px;
+    height: 30px;
+    background-color: var(---primary-soft-red);
+    border-radius: 3px;
+}
+
+.day p {
+    color: var(---neutral-medium-brown);
+    font-weight: var(---font-weight-light);
+    font-size: 0.85rem;
+}
+
+
+
+
+.bottom-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.left-side p, .right-side p:last-child {
+    color: var(---neutral-medium-brown);
+    font-size: 0.85rem;
+    font-weight: var(---font-weight-light);
+}
+
+.left-side h2, .right-side p:first-child {
+    color: var(---neutral-dark-brown);
+    font-weight: var(---font-weight-bold);
+}
+
+.right-side p {
+    font-size: 0.85rem;
+}
+
+.left-side p, .right-side p:first-child {
+    margin-bottom: 3px;
+}

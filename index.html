@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./src/styles.css">
   
   <title>Frontend Mentor | Expenses chart component</title>
 
@@ -15,25 +18,91 @@
   </style>
 </head>
 <body>
+  <div class="expenses-chart-component">
+    <!-- My balance container -- Top container -->
+    <div class="my-balance">
+      <div class="content">
+        <p>My balance</p>
+        <h2>$921.48</h2>
+      </div>
+      <div class="logo">
+        <img src="./images/logo.svg" alt="logo">
+      </div>
+    </div>
+    <!-- Expenses Chart -->
+    <div class="expenses-chart">
+      <div class="top-content">
+        <h2>Spending - Last 7 days</h2>
+      </div>
 
-  My balance
-  $921.48
+      <!-- Middle contents -->
+      <div class="middle-content">
+        <div class="charts">
+          <!-- Monday -->
+          <div class="chart">
+            <div class="bars"></div>
+            <div class="day">
+              <p>mon</p>
+            </div>
+          </div>
+          <!-- Tuesday -->
+          <div class="chart">
+            <div class="bars"></div>
+            <div class="day">
+              <p>tue</p>
+            </div>
+          </div>
+          <!-- Wednesday -->
+          <div class="chart">
+            <div class="bars"></div>
+            <div class="day">
+              <p>wed</p>
+            </div>
+          </div>
+          <!-- Thursday -->
+          <div class="chart">
+            <div class="bars"></div>
+            <div class="day">
+              <p>thu</p>
+            </div>
+          </div>
+          <!-- Friday -->
+          <div class="chart">
+            <div class="bars"></div>
+            <div class="day">
+              <p>fri</p>
+            </div>
+          </div>
+          <!-- Saturday -->
+          <div class="chart">
+            <div class="bars"></div>
+            <div class="day">
+              <p>sat</p>
+            </div>
+          </div>
+          <!-- Sunday -->
+          <div class="chart">
+            <div class="bars"></div>
+            <div class="day">
+              <p>sun</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
+      <!-- Bottom contents -->
+      <div class="bottom-content">
+        <div class="left-side">
+          <p>Total this month</p>
+          <h2>$478.33</h2>
+        </div>
+        <div class="right-side">
+          <p>+2.4%</p>
+          <p>Total this month</p>
+        </div>
+      </div>
+    </div>
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
