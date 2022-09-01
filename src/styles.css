@@ -64,21 +64,25 @@ body {
 }
 
 .my-balance .logo img {
-    width: 3.5rem;
+    width: 3.2rem;
 }
 
 
 .expenses-chart {
     width: 100%;
     background-color: var(---neutral-very-pale-orange);
-    padding: 1rem 1.5rem;
+    padding: 1.5rem;
     border-radius: 20px;
+}
+
+.top-content {
+    margin-bottom: 2rem;
 }
 
 .top-content h2 {
     font-weight: var(---font-weight-bold);
     margin-bottom: 20px;
-    font-size: 18px;
+    font-size: 1.35rem;
 }
 
 
@@ -93,26 +97,95 @@ body {
 .middle-content .charts {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 .charts .chart {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    transition: all 0.3s ease;
 }
 
 .bars {
     width: 35px;
-    height: 30px;
+    height: 1.5rem;
     background-color: var(---primary-soft-red);
     border-radius: 3px;
+    animation: bar 2s ease;
 }
 
-.day p {
+.cyan_color {
+    background-color: var(---primary-cyan);
+}
+
+.highest {
+    height: 7rem;
+}
+
+.second_high {
+    height: 6rem;
+}
+
+.third_high {
+    height: 5rem;
+}
+
+.fourth_high {
+    height: 4rem;
+}
+
+.fifth_high {
+    height: 3rem;
+}
+
+.six_high {
+    height: 2.5rem;
+}
+
+@keyframes bar {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.day {
     color: var(---neutral-medium-brown);
     font-weight: var(---font-weight-light);
     font-size: 0.85rem;
+    margin-top: 5px;
 }
+
+
+.amount {
+    width: 100%;
+    position: absolute;
+    font-size: 0.7rem;
+    background-color: var(---neutral-cream);
+    padding: 2px;
+    opacity: 0;
+}
+
+.amount::after {
+    content: '';
+    position: absolute;
+}
+
+.chart:hover {
+    cursor: pointer;
+}
+
+.chart:hover .amount {
+    opacity: 1;
+}
+
 
 
 
@@ -133,6 +206,10 @@ body {
 .left-side h2, .right-side p:first-child {
     color: var(---neutral-dark-brown);
     font-weight: var(---font-weight-bold);
+}
+
+.left-side h2 {
+    font-size: 1.8rem;
 }
 
 .right-side p {
