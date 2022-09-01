@@ -47,7 +47,7 @@ const loadData = () => {
             <p class="day">
                 ${chart_data.day}
             </p>
-            <div class='amount'>${chart_data.amount}</div>
+            <div class='amount'>$<span>${chart_data.amount}</span></div>
         </div>
         `
     });
@@ -65,7 +65,8 @@ const hightStyle = () => {
     const amounts = document.querySelectorAll('.amount')
     // console.log(amounts);
     amounts.forEach((amount) => {
-        const value = Number(amount.textContent);
+        const value = Number(amount.textContent.split('$')[1]);
+        // console.log(value);
         // Target parent 
         const parent = amount.parentElement
         const bar = parent.querySelector('.bars')

@@ -116,8 +116,16 @@ body {
     animation: bar 2s ease;
 }
 
+.bars:hover {
+    background-color: hsl(10, 71%, 70%);
+}
+
 .cyan_color {
     background-color: var(---primary-cyan);
+}
+
+.cyan_color:hover {
+    background-color: hsl(186, 60%, 75%);
 }
 
 .highest {
@@ -165,11 +173,15 @@ body {
 
 
 .amount {
-    width: 100%;
+    width: 3rem;
     position: absolute;
+    top: -1.8rem;
     font-size: 0.7rem;
-    background-color: var(---neutral-cream);
-    padding: 2px;
+    font-weight: var(---font-weight-bold);
+    background-color: var(---neutral-dark-brown);
+    color: var(---neutral-very-pale-orange);
+    padding: 5px;
+    border-radius: 5px;
     opacity: 0;
 }
 
@@ -224,6 +236,11 @@ body {
 /* Mobile Devices :: Media Queries */
 @media screen and (min-width : 320px) and (max-width : 480px) {
     .expenses-chart-component {
-        width: 95%;
+        width: 90%;
+    }
+
+    .bars {
+        width: 30px;
+        
     }
 }
