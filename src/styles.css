@@ -219,3 +219,11 @@ body {
 .left-side p, .right-side p:first-child {
     margin-bottom: 3px;
 }
+
+
+/* Mobile Devices :: Media Queries */
+@media screen and (min-width : 320px) and (max-width : 480px) {
+    .expenses-chart-component {
+        width: 90%;
+    }
+}

@@ -1,3 +1,0 @@
-${(chart_data.amount >= 50) ? '<div class="bars high"></div>' : (chart_data.amount >= 40) ? '<div class="bars second_high"></div>' : (chart_data.amount >= 34) ? '<div class="bars third_high"></div>' : (chart_data.amount >= 30) ? '<div class="bars fourth_high"></div>' : (chart_data.amount >= 25) ? '<div class="bars fifth_high"></div>' : (chart_data.amount >= 20) ? '<div class="bars six_high"></div>' :
-            '<div class="bars low"></div>'
-            }
