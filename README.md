@@ -1,4 +1,5 @@
 # Frontend Mentor - Expenses chart component
+## Live :: https://micdev123.github.io/expenses-chart-component/
 
 ![Design preview for the Expenses chart component coding challenge](./design/desktop-preview.jpg)
 
